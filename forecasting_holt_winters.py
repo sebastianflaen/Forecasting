@@ -39,7 +39,7 @@ print(np.sqrt(mean_squared_error(test_data,test_predictions))) #root mean abs de
 
 #har nå sammenlignet med test_data og_ test predicition.
 
-#ønsker nå å faktisk forecaste inn iframtiden. Data vi ikke har enda
+#ønsker nå å faktisk forecaste inn i framtiden. Data vi ikke har enda
 
 final_model = ExponentialSmoothing(df['Thousands of Passengers'],trend='mul',seasonal='mul',seasonal_periods=12).fit()
 forecast_predictions = final_model.forecast(36)
